@@ -8,18 +8,31 @@
 
 KIF+XBAdditions adds a bunch of useful methods for retrieving views using the accessibility hint property.
 
-You can now use the following methods:
+You can now use the following methods.
 
-### Retrieving a view
+### KIFUITestActor
+
+#### Retrieving a view
 
 	- (UIView *)waitForViewWithAccessibilityHint:(NSString *)hint;
 or
 
 	- (void)waitForAccessibilityElement:(out UIAccessibilityElement **)foundElement view:(out UIView **)foundView withHint:(NSString *)hint tappable:(BOOL)mustBeTappable;
 
-### Tapping on a view
+#### Tapping on a view
 
 	- (void)tapViewWithAccessibilityHint:(NSString *)hint;
+
+### UIView
+
+#### Retrieving a subview
+	- (UIAccessibilityElement *)accessibilityElementWithHint:(NSString *)hint;
+or
+
+	- (UIAccessibilityElement *)accessibilityElementWithHint:(NSString *)hint traits:(UIAccessibilityTraits)traits;
+or
+
+	- (UIAccessibilityElement *)accessibilityElementWithHint:(NSString *)hint accessibilityValue:(NSString *)value traits:(UIAccessibilityTraits)traits;
 
 
 ## Installation
