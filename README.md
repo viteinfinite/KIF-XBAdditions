@@ -19,7 +19,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Simone Civetta, simonecivetta@gmail.com
+Simone Civetta, Xebia IT Architects, viteinfinite@gmail.com
 
 ## License
 

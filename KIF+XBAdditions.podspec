@@ -7,31 +7,21 @@
 Pod::Spec.new do |s|
   s.name             = "KIF+XBAdditions"
   s.version          = "0.1.0"
-  s.summary          = "A short description of KIF+XBAdditions."
+  s.summary          = "A small toolset for KIF. With love, from Xebia."
   s.description      = <<-DESC
-                       An optional longer description of KIF+XBAdditions
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                        A small toolset for KIF. Adds view retrieval by accessibility hint.
                        DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "http://www.xebia.fr"
   s.license          = 'MIT'
-  s.author           = { "Simone Civetta" => "simonecivetta@gmail.com" }
-  s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/EXAMPLE'
+  s.author           = { "Simone Civetta" => "viteinfinite@gmail.com" }
+  s.source           = { :git => "https://github.com/viteinfinite/KIF+XBAdditions.git", :tag => s.version.to_s }
 
-  # s.platform     = :ios, '5.0'
-  # s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
+  s.platform     = :ios, '5.1'
   s.requires_arc = true
 
-  s.source_files = 'Classes'
-  s.resources = 'Assets/*.png'
+  s.source_files = 'Classes/'
 
-  s.ios.exclude_files = 'Classes/osx'
-  s.osx.exclude_files = 'Classes/ios'
   # s.public_header_files = 'Classes/**/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
-  # s.dependency 'JSONKit', '~> 1.4'
+  s.dependency 'KIF', '~> 3.0'
 end
