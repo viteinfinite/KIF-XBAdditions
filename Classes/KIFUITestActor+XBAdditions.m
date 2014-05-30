@@ -9,13 +9,6 @@
 #import "UIView-KIFAdditions.h"
 #import "UIApplication-KIFAdditions.h"
 #import "UIAccessibilityElement-KIFAdditions.h"
-#import "UIApplication+KIFXBAdditions.h"
-
-@interface KIFTestActor(Protected)
-
-- (UITableViewCell *)waitForCellAtIndexPath:(NSIndexPath *)indexPath inTableView:(UITableView *)tableView;
-
-@end
 
 @implementation KIFUITestActor (XBAdditions)
 
@@ -55,14 +48,6 @@
     UIView *view;
     [self waitForAccessibilityElement:&element view:&view withHint:hint tappable:YES];
     [self tapAccessibilityElement:element inView:view];
-}
-
-#pragma mark - Table views
-
-- (UITableViewCell *)waitForCellAtIndexPathInMainTableView:(NSIndexPath *)indexPath
-{
-    UITableView *tableView = [[UIApplication sharedApplication] mainTableView];
-    return [self waitForCellAtIndexPath:indexPath inTableView:tableView];
 }
 
 @end
