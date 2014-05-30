@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Simone Civetta" => "viteinfinite@gmail.com" }
   s.source           = { :git => "https://github.com/viteinfinite/KIF-XBAdditions.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/viteinfinite'
 
   s.platform     = :ios, '5.1'
   s.requires_arc = true
@@ -22,6 +23,5 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/'
 
   s.public_header_files = 'Classes/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
   s.dependency 'KIF', '~> 3.0'
 end
