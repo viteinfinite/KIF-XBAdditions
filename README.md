@@ -31,7 +31,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Simone Civetta, Xebia IT Architects, viteinfinite@gmail.com
+Simone Civetta, Xebia IT Architects, [@viteinfinite](http://twitter.com/viteinfinite)
 
 ## License
 
