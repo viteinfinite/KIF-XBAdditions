@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Classes/'
 
-  # s.public_header_files = 'Classes/**/*.h'
+  s.public_header_files = 'Classes/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
   s.dependency 'KIF', '~> 3.0'
 end
