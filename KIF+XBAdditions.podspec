@@ -11,10 +11,10 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                         A small toolset for KIF. Adds view retrieval by accessibility hint.
                        DESC
-  s.homepage         = "http://www.xebia.fr"
+  s.homepage         = "https://github.com/viteinfinite/KIF-XBAdditions"
   s.license          = 'MIT'
   s.author           = { "Simone Civetta" => "viteinfinite@gmail.com" }
-  s.source           = { :git => "https://github.com/viteinfinite/KIF+XBAdditions.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/viteinfinite/KIF-XBAdditions.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '5.1'
   s.requires_arc = true
