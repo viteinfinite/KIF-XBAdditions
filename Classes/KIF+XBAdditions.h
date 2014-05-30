@@ -7,3 +7,4 @@
 
 #import "KIFUITestActor+XBAdditions.h"
 #import "UIView+KIFXBAdditions.h"
+#import "UIApplication+KIFXBAdditions.h"

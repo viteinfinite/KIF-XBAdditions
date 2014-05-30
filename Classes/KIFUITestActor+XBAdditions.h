@@ -37,4 +37,13 @@
  */
 - (void)tapViewWithAccessibilityHint:(NSString *)hint;
 
+/**
+ *  Waits for the cell at indexPath in the application's main tableView, i.e. the first tableView found in the view hierarchy.
+ *
+ *  @param indexPath Index path of the cell.
+ *
+ *  @return Table view cell at index path
+ */
+- (UITableViewCell *)waitForCellAtIndexPathInMainTableView:(NSIndexPath *)indexPath;
+
 @end
