@@ -4,11 +4,23 @@
 [![License](https://img.shields.io/cocoapods/l/KIF+XBAdditions.svg?style=flat)](http://cocoadocs.org/docsets/KIF+XBAdditions)
 [![Platform](https://img.shields.io/cocoapods/p/KIF+XBAdditions.svg?style=flat)](http://cocoadocs.org/docsets/KIF+XBAdditions)
 
-## Usage
+## Features
 
-To run the example project; clone the repo, and run `pod install` from the Example directory first.
+KIF+XBAdditions adds a bunch of useful methods for retrieving views using the accessibility hint property.
 
-## Requirements
+You can now use the following methods:
+
+### Retrieving a view
+
+	- (UIView *)waitForViewWithAccessibilityHint:(NSString *)hint;
+or
+
+	- (void)waitForAccessibilityElement:(out UIAccessibilityElement **)foundElement view:(out UIView **)foundView withHint:(NSString *)hint tappable:(BOOL)mustBeTappable;
+
+### Tapping on a view
+
+	- (void)tapViewWithAccessibilityHint:(NSString *)hint;
+
 
 ## Installation
 
